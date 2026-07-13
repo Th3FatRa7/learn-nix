@@ -17,6 +17,11 @@ let
 in
 {
   options = {
+    pokemon.name = lib.mkOption {
+      type = lib.types.str;
+      default = "pikachu";
+    };
+
     shellApplication = lib.mkOption {
       type = lib.types.package;
     };
