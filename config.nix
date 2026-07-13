@@ -14,6 +14,7 @@
       chafa
     ];
     text = ''
+      clear && \
       curl -s ${config.pokemons.${config.pokemon.name}.url} \
       | chafa ${lib.concatStringsSep " " config.chafa.params}
     '';
